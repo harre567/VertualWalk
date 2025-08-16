@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: vrm-metaverse
+    env: node
+    plan: free
+    buildCommand: "npm ci"
+    startCommand: "npm start"
+    autoDeploy: true
+    rootDir: .
+    envVars:
+      - key: NODE_VERSION
+        value: 18
